@@ -18,7 +18,11 @@
 }
 
 html {
-	font-size: 62.5%;
+	/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 
@@ -95,7 +99,7 @@ header {
 }
 
 .nav__link {
-	font-size: 1.5em;
+	font-size: 2.5rem;
 	padding: 20px;
 	color: #29492a;
 }
@@ -111,7 +115,7 @@ header {
 	height: 100vh;
 	text-align: center;
 	background: url(../img/background-image.jpg) no-repeat center;
-	padding: 0 1.25em;
+	padding: 0 20px;
 }
 
 .img__container {
@@ -121,7 +125,7 @@ header {
 
 .sub__title {
 	color: var(--second-green);
-	font-size: 2.4em;
+	font-size: 3.2rem;
 	font-style: italic;
 	font-weight: 200;
 }
@@ -145,7 +149,7 @@ header {
 	margin: 0 auto;
 	margin-bottom: 60px;
 	padding-bottom: 5px;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	border-bottom: 2px solid white;
 }
 
@@ -179,7 +183,7 @@ header {
 
 .title__name {
 	padding: 20px 0;
-	font-size: 1.3em;
+	font-size: 2rem;
 	width: 100%;
 	text-align: center;
 	background-color: var(--main-black);
@@ -187,7 +191,7 @@ header {
 }
 
 .code {
-	font-size: 1.2em;
+	font-size: 2.4rem;
 	color: var(--main-black);
 	transition: color 0.3s ease-in-out;
 }
@@ -202,7 +206,7 @@ header {
 	display: block;
 	width: max-content;
 	background-color: var(--main-black);
-	font-size: 1.1em;
+	font-size: 1.7rem;
 	margin: 0 auto;
 	padding: 12px 20px;
 	padding-right: 45px;
@@ -238,7 +242,7 @@ header {
 /* Contacts styles starts */
 #contacts {
 	height: 70vh;
-	padding: 0 1.25em;
+	padding: 0 20px;
 	text-align: center;
 }
 
@@ -247,7 +251,7 @@ header {
 }
 
 #contacts > p {
-	font-size: 1.2em;
+	font-size: 2rem;
 	font-style: italic;
 	margin-bottom: 40px;
 }
@@ -255,7 +259,7 @@ header {
 
 .contacts__list {
 	column-gap: 40px;
-	font-size: 1.6em;
+	font-size: 2.7rem;
 	row-gap: 25px;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -290,19 +294,26 @@ header {
 
 .info {
 	justify-content: space-between;
-	font-size: 1.2em;
-	padding: 2.3em 2em;
+	font-size: 1.7rem;
+	padding: 4.3rem 4rem;
 	column-gap: 40px;
 }
 /* Footer styles ends */
 
 @media only screen and (max-width: 1100px) {
+	.html {
+		font-size: 60%;
+	}
 	.project__tiles {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media only screen and (max-width: 734px) {
+	html {
+		font-size: 58%;
+	}
+
 	.project__tiles {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -313,17 +324,26 @@ header {
 }
 
 @media only screen and (max-width: 460px) {
+	html {
+    font-size: 58%;
+  }
+
 	#navbar {
 		min-height: 50px;
+		justify-content: center;
+		padding-right: 0;
 	}
 	
-	.nav__link {
+	/* .nav__link {
 		font-size: 1.4em;
-	}
+	} */
 
+}
+
+@media only screen and (max-width: 430px) {
 	.info {
 		flex-direction: column;
-		row-gap: 2.5em;
+		row-gap: 4rem;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
