@@ -323,6 +323,13 @@ header {
 	}
 }
 
+@media only screen and (max-width: 550px) {
+	#welcome-section {
+		background: url(../img/background-sm.jpg) center no-repeat;
+		background-size: cover;
+	}
+}
+
 @media only screen and (max-width: 460px) {
 	html {
     font-size: 58%;
