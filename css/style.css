@@ -324,15 +324,8 @@ header {
 }
 
 @media only screen and (max-width: 550px) {
-	#welcome-section {
-		background: url(../img/background-sm.jpg) center no-repeat;
-		background-size: cover;
-	}
-}
-
-@media only screen and (max-width: 460px) {
 	html {
-    font-size: 58%;
+    font-size: 47%;
   }
 
 	#navbar {
@@ -340,14 +333,21 @@ header {
 		justify-content: center;
 		padding-right: 0;
 	}
-	
-	/* .nav__link {
-		font-size: 1.4em;
-	} */
 
+	#welcome-section {
+		background: url(../img/background-sm.jpg) center no-repeat;
+		background-size: cover;
+	}
+
+	.img__container {
+		max-width: 48%;
+	}
 }
 
 @media only screen and (max-width: 430px) {
+	h1 {
+    font-size: 5rem;
+  }
 	.info {
 		flex-direction: column;
 		row-gap: 4rem;
@@ -356,3 +356,5 @@ header {
 		text-align: center;
 	}
 }
+
+@media only screen and (max-height: )
