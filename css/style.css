@@ -84,9 +84,6 @@ header {
 	width: 100%;
 	transition: 0.2s linear;
 	/* border-bottom: 1.5px solid black; */
-}
-
-.header_active {
 	background-color: var(--main-green);
 }
 
